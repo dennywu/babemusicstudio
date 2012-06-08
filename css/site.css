@@ -1,0 +1,46 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing:0;
+    color:#434343;
+    background:#efefef url(/rent-band/images/home/background.png) repeat top center;
+    padding:20px 0;
+    position:relative;
+    text-shadow:0 1px 0 rgba(255,255,255,.8);
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+.container-page{
+    width: 985px;
+    min-height: 550px;
+    margin: auto;
+    padding:10px;
+    background-color: White;
+}
+#slider{
+    margin: auto;
+    margin-top: 70px;
+}
+.footer
+{
+	padding: 10px;
+	margin: 10px 20px;
+	font-size: 9.5px;
+	text-align: center;
+	border-top: 1px solid #C9E0ED;
+}
+#globalheader #globalnav li a#haveItemInCart{
+    color:Orange;
+    text-decoration: underline;
+    cursor: pointer;
+    display: inline;
+    border:0px;
+}
+#globalheader #globalnav li a#haveItemInCart:hover{
+    color:Yellow;
+}
+.text-right{
+    text-align:right;
+}
+.text-left{
+    text-align: left;
+    outline: none;
+}

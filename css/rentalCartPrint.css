@@ -1,0 +1,88 @@
+@media print{
+    table.tblRentalCart{
+        width:100%;
+        font-size:12px;
+    }
+    table.tblRentalCart thead tr{
+    background: #e2e2e2; /* Old browsers */
+    background: -moz-linear-gradient(top,  #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e2e2e2), color-stop(50%,#dbdbdb), color-stop(51%,#d1d1d1), color-stop(100%,#fefefe)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* IE10+ */
+    background: linear-gradient(top,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
+
+    }
+    table.tblRentalCart thead tr th{
+        padding:5px;
+    }
+    img.small-product{
+        width: 50px;
+    }
+    div.detail-product{
+        height: 81px;
+        width:100%;
+        vertical-align: top;
+    }
+    span.title-product{
+        font-size: 12px;
+        color:#1170A0;
+        cursor: pointer;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    span.title-product:hover{
+        text-decoration: underline;
+    }
+    .font10{
+        font-size: 10px;
+    }
+    .c_abu{
+        color:#666;
+    }
+    table.tblRentalCart tbody tr td{
+        margin-bottom: 10px;
+        padding-top:5px;
+        border-bottom: 1px solid #cac9c9;
+        vertical-align: top;
+        padding-right:5px;
+    }
+    input.qty{
+        width:40px;
+    }
+    input.qty:focus{
+        otline:none;
+    }
+    input.hari{
+        width:40px;
+    }
+    input.hari:focus{
+        otline:none;
+    }
+    .remove{
+        color:Red;
+        font-weight: bold;
+        cursor:pointer;
+    }
+    .remove:hover{
+        color:#771D02;
+    }
+    #inputcust{
+        margin-top:30px;
+        padding-left: 100px;
+    }
+    #tblinputCustomer tbody tr td{
+        padding:5px;
+        color:#999;
+        font:normal 11px/14px arial, sans-serif;
+    }
+    #buttonsewa
+    {
+        padding: 5px;
+    }
+    .inputCustHeader{
+        color:#771D02;
+        font:normal 11px/14px arial, sans-serif;
+    }
+}

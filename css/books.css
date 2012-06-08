@@ -1,0 +1,119 @@
+ul#list-books {
+    padding: 0px;
+    margin: 0px;
+    margin-top: -15px;
+    list-style: none;
+}
+ul#list-books li {
+    text-align: center;
+    padding: 10px;
+    text-align: left;
+    border-top:1px solid #cac9c9;
+}
+ul#list-books li img {
+    border: 1px solid #F4F4F4;
+    padding: 2px;
+    width: 100px;
+    margin-right: 10px;
+    float: left;
+    border-image: initial;
+}
+.w320 {
+    width: 320px;
+}
+.left {
+    float: left;
+}
+.font16 {
+    font-size: 16px;
+}
+.c_blue_kompas {
+    color: #1170A0;
+    cursor:pointer;
+}
+.c_blue_kompas a {
+    text-decoration: none;
+    color: #1170A0;
+}
+.c_blue_kompas:hover {
+    text-decoration: underline;
+}
+.font11 {
+    font-size: 11px;
+}
+.c_abu {
+    color: gray;
+}
+.c_abu a {
+    text-decoration: none;
+    color: gray;
+}
+.w150 {
+    width: 150px;
+}
+.right {
+    float: right;
+}
+#list-books span.hrg_1 {
+    font-size: 11px;
+    color: #666;
+    text-decoration: line-through;
+}
+.c_red {
+    color: red;
+}
+.font14 {
+    font-size: 14px;
+}
+.clearit {
+    clear: both;
+    font-size: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+.pt_5 {
+    padding-top: 5px;
+}
+.beli a {
+    background: url(/rent-band/images/book/sewa.png)no-repeat;
+    width: 90px;
+    height: 22px;
+    display: block;
+}
+.beli a:hover {
+    background: url(/rent-band/images/book/sewaHover.png)no-repeat;
+}
+#list-category{
+    
+}
+.headerCategory{
+    margin-left: 50px;
+    border-left:1px solid #ccc;
+    text-align: center;
+    font-size:12px;
+    background: #e2e2e2; /* Old browsers */
+    background: -moz-linear-gradient(top,  #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e2e2e2), color-stop(50%,#dbdbdb), color-stop(51%,#d1d1d1), color-stop(100%,#fefefe)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* IE10+ */
+    background: linear-gradient(top,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
+    padding:5px;
+}
+div.list-category{
+    background: #f8f8f8;
+    margin-left: 50px;
+    padding:3px;
+    border-left:1px solid #ccc;
+    text-align: left;
+    font-size:12px;
+    
+}
+div.list-category a{
+    color:#44a9d0;
+}
+div.list-category a:hover{
+    color:black;
+    text-decoration: underline;
+}

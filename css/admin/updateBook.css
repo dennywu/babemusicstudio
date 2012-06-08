@@ -1,0 +1,94 @@
+div.DialogEditBook{
+	font-family:"Lucida Grande",Arial,Verdana,Helvetica,sans-serif;
+	height : 430px;
+	width : 512px;
+	border : 1px solid #ECECEC;
+	border-radius: 6px;
+	-moz-box-shadow: 0 0 4px 0 #999;
+	-webkit-box-shadow: 0 0 4px 0 #999;
+	box-shadow: 0 0 12px 0 #999;
+}
+div.HeaderDialogBook{
+	padding: 20px 25px;
+	background: #d0e4f7; /* Old browsers */
+    background: -moz-linear-gradient(top,  #d0e4f7 0%, #73b1e7 24%, #0a77d5 50%, #539fe1 79%, #87bcea 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d0e4f7), color-stop(24%,#73b1e7), color-stop(50%,#0a77d5), color-stop(79%,#539fe1), color-stop(100%,#87bcea)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%); /* IE10+ */
+    background: linear-gradient(top,  #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f7', endColorstr='#87bcea',GradientType=0 ); /* IE6-9 */
+    text-shadow: none;
+    color:black;
+}
+div.TitleHeaderDialogEditBook{
+	text-align:left;
+	font-size:18px;
+	font-weight:bold;
+	color:#DDD6D6;
+}
+.CreateEditBook
+{
+	background: transparent url("./image/Actions.png") repeat-x;
+	background-position: -0px -1458px;
+	border-color: #CFCECE #CFCECE #B5B4B4;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-style: solid;
+	border-width: 1px;
+	color: #444;
+	font: bold 11px Arial,Helvetica,sans-serif;
+	margin: 0;
+	padding: 5px 15px;
+	cursor:pointer;
+}
+.Currency{
+	background-color : #7affb5;
+	border:solid 1px #0de564;
+	padding:0 2px 0 2px;
+	font-size:12px;
+	font-weight:bold;
+}
+
+input[type=text].InputEditBook
+{
+	width:95%;
+	font-size:13px;
+}
+.HeaderLogoEditBook
+{
+	background:transparent url("/viona/images/store_house_48.png") no-repeat;
+	height: 48px;
+	width: 48px;
+	float: left;
+	margin: -10px 10px 0 -15px;
+}
+#CancelEditBook{
+	color:red;
+	font-size:12px;
+	text-decoration:underline;
+	cursor:pointer;
+}
+#CancelEditBook:hover{
+	color:black;
+}
+.EditBook{
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 334px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    height: 50px;
+}
+span.edit{
+    color:Red;
+    cursor: pointer;
+}
+span.edit:hover{
+    color:black;
+    text-decoration:underline;
+}
+#desc{
+    margin-left: 95px;
+    margin-bottom: 30px;
+}

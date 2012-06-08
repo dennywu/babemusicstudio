@@ -1,0 +1,62 @@
+<link href="/rent-band/css/admin/updateBook.css" rel="stylesheet" type="css/text"/>
+<form id="FormEditBook" style="margin:0px;" action="/rent-band/Application/admin/addBook.php" method="POST" enctype="multipart/form-data">
+  <div class = "DialogEditBook">
+    <div class="HeaderDialogBook">
+      <div class="HeaderLogoBook"></div>
+      <div class="TitleHeaderDialogBook">Tambah Buku Baru</div>
+    </div>
+    <div class="BodyDialogEditBook" style="margin-top:30px">
+    <table style="font-size: 12px">
+        <tr>
+            <td>Nama</td>
+            <td><input type="text" name="name" id="name"/><input type="hidden" name="id" id="id"/></td>
+        </tr>
+        <tr>
+            <td>Kategory</td>
+            <td><select name="kategori" id="kategori"></select></td>
+        </tr>
+        <tr>
+            <td>Author</td>
+            <td><input type="text" name="author" id="author"/></td>
+        </tr>
+        <tr>
+            <td>Publisher</td>
+            <td><input type="text" name="publisher" id="publisher"/></td>
+        </tr>
+        <tr>
+            <td>Published</td>
+            <td><input type="text" name="published" id="published"/></td>
+        </tr>
+        <tr>
+            <td>Sinopsis</td>
+            <td><textarea name="sinopsi" style="width:200px" id="sinopsi" rows="5"></textarea></td>
+        </tr>
+        <tr>
+            <td>Amount</td>
+            <td><input type="number" name="amount" id="amount"/></td>
+        </tr>
+        <tr>
+            <td>Stock</td>
+            <td><input type="number" name="stock" id="stock"/></td>
+        </tr>
+        <tr>
+            <td>Image</td>
+            <td><input type="file" name="image" id="image"/></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div style="margin-top:10px; text-align: center;">
+                <p style="font-size:11px">
+                    <button type="submit" name="save">Tambah</button>
+		<span id="batalArea">
+                    atau
+                    <span id="CancelEditBook" onclick="closeDialogEdit()">Batal</span>
+                  </span>
+                </p>
+              </div>
+            </td>
+        </tr>
+    </table>
+    </div>
+  </div>
+</form>

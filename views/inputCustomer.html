@@ -1,0 +1,53 @@
+<div class="inputCustHeader">
+    Silahkan isi data pribadi anda dengan benar untuk mempermudah proses penyewaan.
+</div>
+<form id="frmInpuTCust">
+<table id="tblinputCustomer">
+    <tr>
+        <td>Title</td>
+        <td>:</td>
+        <td>
+            <select name="title" id="cust-title">
+                <option value="mr">Mr</option>
+                <option value="mrs">Mrs</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Nama Lengkap</td>
+        <td>:</td>
+        <td><input type="text" name="name" id="cust-name" required/></td>
+    </tr>
+    <tr>
+        <td>Alamat</td>
+        <td>:</td>
+        <td><input type="text" name="address" id="cust-address" required/></td>
+    </tr>
+    <tr>
+        <td>Kota</td>
+        <td>:</td>
+        <td><input type="text" name="city" id="cust-city" required/></td>
+    </tr>
+    <tr>
+        <td>Negara</td>
+        <td>:</td>
+        <td><input type="text" name="state" id="cust-state" required/></td>
+    </tr>
+    <tr>
+        <td>No. Telp</td>
+        <td>:</td>
+        <td><input type="text" name="telp" id="cust-telp" required/></td>
+    </tr>
+    <tr>
+        <td>Email</td>
+        <td>:</td>
+        <td><input type="email" name="email" id="cust-email" required/></td>
+    </tr>
+    <tr>
+        <td colspan="2"></td>
+        <td>
+            <input type="button" id="buttonsewa" onclick="Booking()" value="Sewa"/>
+        </td>
+    </tr>
+</table>
+</form>

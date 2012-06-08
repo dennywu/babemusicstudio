@@ -1,0 +1,42 @@
+<link href="/rent-band/css/admin/updateBook.css" rel="stylesheet" type="css/text"/>
+<form name="FormEditBook" style="margin:0px;" action="/rent-band/Application/admin/updatePaket.php" method="POST" enctype="multipart/form-data">
+  <div class = "DialogEditBook">
+    <div class="HeaderDialogBook">
+      <div class="HeaderLogoBook"></div>
+      <div class="TitleHeaderDialogBook">Ubah Data Paket</div>
+    </div>
+    <div class="BodyDialogEditBook" style="margin-top:30px">
+    <table style="font-size: 12px">
+        <tr>
+            <td>Nama</td>
+            <td><input type="text" name="name" id="name"/><input type="hidden" name="id" id="id"/></td>
+        </tr>
+        <tr>
+            <td>Detail</td>
+            <td><textarea name="detail" style="width:200px" id="detail" rows="5" value="99999"></textarea></td>
+        </tr>
+        <tr>
+            <td>Amount</td>
+            <td><input type="number" name="amount" id="amount"/></td>
+        </tr>
+        <tr>
+            <td>Image</td>
+            <td><input type="file" name="image" id="image"/></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div style="margin-top:10px; text-align: center;">
+                <p style="font-size:11px">
+                    <button type="submit">Ubah</button>
+		<span id="batalArea">
+                    atau
+                    <span id="CancelEditBook" onclick="closeDialogEdit()">Batal</span>
+                  </span>
+                </p>
+              </div>
+            </td>
+        </tr>
+    </table>
+    </div>
+  </div>
+</form>
