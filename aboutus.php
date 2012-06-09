@@ -14,8 +14,9 @@
             <div class="containaboutus" style='width: 700px;margin: 30px auto;'>
                 <strong>Alamat Babe Music Studio:</strong><br/><br/>
 
-                Perumahan Skopkar blok B4 no 8 Batu Aji, Batam.<br/>
-                Telepon: 0778-393596, 081372478680<br/>
+                Perumahan Puskopkar blok B4 no 8 Batu Aji, Batam.<br/>
+                Telepon: 0778-393596, 081372478680<br/><br/>
+                Buka Jam 09.00 pagi sampai Jam 12.00 Malam
             </div>
         </div>
 	<?php include_once 'views/footer.php'; ?>

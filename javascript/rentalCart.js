@@ -51,7 +51,7 @@ function setInformation(data){
                                 "Untuk informasi lebih lanjut, hubungi : <br/>"+
                                 "<strong>Babe Music Studio</strong><br/>"+
                                 "Telp : 0778-393596 & 081372478680 <br/>"+
-                                "Alamat : Perumahan Skopkar blok B4 no 8 Batu Aji, Batam<br/>"+
+                                "Alamat : Perumahan Puskopkar blok B4 no 8 Batu Aji, Batam<br/>"+
                                 "</div>"+
                                 "</td></tr>");
      

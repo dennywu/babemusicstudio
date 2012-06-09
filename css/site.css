@@ -8,12 +8,13 @@ body{
     text-shadow:0 1px 0 rgba(255,255,255,.8);
     -webkit-font-smoothing: subpixel-antialiased;
 }
-.container-page{
-    width: 985px;
+.container-page{width: 985px;
     min-height: 550px;
     margin: auto;
-    padding:10px;
-    background-color: White;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #AAA8A7;
+    box-shadow: 2px 1px 12px #aaa8a7;
 }
 #slider{
     margin: auto;

@@ -45,9 +45,6 @@ function showDetailCallBack(data){
                             "<td>"+
                                 "<div class='detail-product'>"+
                                     "<span class='title-product'>"+data.items[i].name+"</span></br>"+
-                                    "<span class='font10 c_abu'>"+ data.items[i].author +"</span></br></br>"+
-                                    "<span class='font10 c_abu'>"+ data.items[i].publisher +"</span></br>"+
-                                    "<span class='font10 c_abu'>Publisher: "+ data.items[i].published.toDefaultFormatDate() +"</span></br>"+
                                 "</div>"+
                             "</td>"+
                             "<td>"+
@@ -86,12 +83,13 @@ function showDetailCallBack(data){
         $(".tblRentalCart").append("<tr><td colspan='8'></td></tr>"+
                                     "<tr><td colspan='8'><div>"+
                                     "Terima Kasih <strong>"+data.title +". "+ data.name +"</strong>,<br/><br/>"+
-                                    "Penyewaan buku ini akan berlaku sampai tanggal "+ data.expiredate.toDefaultFormatDateTime() +",<br/>"+
-                                    "jika pada tanggal "+ data.expiredate.toDefaultFormatDateTime() +" anda belum mengambil buku penyewaan atau tidak konfirmasi maka status penyewaan anda <strong>Batal</strong>."+
-                                    "Pembayaran dilakukan pada saat pengambilan buku sewaan.<br/><br/>"+
+                                    "Penyewaan alat band ini akan berlaku sampai tanggal "+ data.expiredate.toDefaultFormatDateTime() +",<br/>"+
+                                    "jika pada tanggal "+ data.expiredate.toDefaultFormatDateTime() +" anda belum mengambil alat band yang disewa atau tidak konfirmasi maka status penyewaan anda <strong>Batal</strong>. "+
+                                    "Pembayaran dilakukan pada saat pengambilan alat band. <br/><br/>"+
                                     "Untuk informasi lebih lanjut, hubungi : <br/>"+
-                                    "Telp : XXXXXXXXXXXXX <br/>"+
-                                    "<strong>Mei-hil Nagoya Center</strong>"+
+                                    "<strong>Babe Music Studio</strong><br/>"+
+                                    "Telp : 0778-393596 & 081372478680 <br/>"+
+                                    "Alamat : Perumahan Puskopkar blok B4 no 8 Batu Aji, Batam<br/>"+
                                     "</div>"+
                                     "</td></tr>");
         $(".tblRentalCart").append("<tr class='print'><td colspan='8'>"+
