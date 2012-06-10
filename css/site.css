@@ -5,7 +5,7 @@ body{
     background:#efefef url(/rent-band/images/home/background.png) repeat top center;
     padding:20px 0;
     position:relative;
-    text-shadow:0 1px 0 rgba(255,255,255,.8);
+    /*text-shadow:0 1px 0 rgba(255,255,255,.8);*/
     -webkit-font-smoothing: subpixel-antialiased;
 }
 .container-page{width: 985px;

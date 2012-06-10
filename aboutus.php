@@ -17,6 +17,7 @@
                 Perumahan Puskopkar blok B4 no 8 Batu Aji, Batam.<br/>
                 Telepon: 0778-393596, 081372478680<br/><br/>
                 Buka Jam 09.00 pagi sampai Jam 12.00 Malam
+                <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/?ie=UTF8&amp;ll=1.048417,103.965957&amp;spn=0.003116,0.005284&amp;t=h&amp;z=18&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/?ie=UTF8&amp;ll=1.048417,103.965957&amp;spn=0.003116,0.005284&amp;t=h&amp;z=18&amp;source=embed" style="color:#0000FF;text-align:left">Lihat Peta Lebih Besar</a></small>
             </div>
         </div>
 	<?php include_once 'views/footer.php'; ?>
