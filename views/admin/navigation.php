@@ -11,6 +11,11 @@
 						<span>Paket</span>
 					</a>
 				</li>
+                                <li>
+					<a href="/rent-band/views/admin/report.php">
+						<span>Laporan</span>
+					</a>
+				</li>
 				<li>
 					<a href="/rent-band/views/admin/customer.php">
 						<span>Pelanggan</span>
