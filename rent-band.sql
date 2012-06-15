@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jun 08, 2012 at 09:00 AM
+-- Generation Time: Jun 15, 2012 at 05:42 PM
 -- Server version: 5.5.16
 -- PHP Version: 5.3.8
 
@@ -38,25 +38,6 @@ CREATE TABLE IF NOT EXISTS `customer` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `customer`
---
-
-INSERT INTO `customer` (`id`, `title`, `name`, `address`, `city`, `state`, `telp`, `email`) VALUES
-('4fd0967945431', 'mr', 'Denny', 'Gak tau', 'Batam', 'Indonesia', '08566584915', 'denny@inforsys.co.id');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `kategori`
---
-
-CREATE TABLE IF NOT EXISTS `kategori` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(255) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
-
 -- --------------------------------------------------------
 
 --
@@ -67,17 +48,33 @@ CREATE TABLE IF NOT EXISTS `paket` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL,
   `detail` mediumtext NOT NULL,
+  `dendaperhari` decimal(10,0) NOT NULL,
   `amount` decimal(65,0) NOT NULL,
   `image` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
 
 --
 -- Dumping data for table `paket`
 --
 
-INSERT INTO `paket` (`id`, `name`, `detail`, `amount`, `image`) VALUES
-(9, 'Paket A', '1. Drum Rolling atau Santafe <br/>\r\n2. Hedcabinet Russel Gitar dan Bass<br/>\r\n3. Amplie Gitar Silvercress<br/>\r\n4. Gitar Extreme<br/>\r\n5. Gitar Bass Ibanez<br/>\r\n6. Gitar Melody Caraya<br/><br/>\r\n\r\nRusak Ganti Rugi ya', 500000, '9295211_3144171.jpg');
+INSERT INTO `paket` (`id`, `name`, `detail`, `dendaperhari`, `amount`, `image`) VALUES
+(9, 'Paket A', '1. Drum Rolling atau Santafe <br/>\r\n2. Hedcabinet Russel Gitar dan Bass<br/>\r\n3. Amplie Gitar Silvercress<br/>\r\n4. Gitar Extreme<br/>\r\n5. Gitar Bass Ibanez<br/>\r\n6. Gitar Melody Caraya<br/><br/>\r\n\r\nRusak Ganti Rugi ya', 50000, 500000, '9295211_3144171.jpg'),
+(10, 'Paket B', 'test', 30000, 300000, 'bmb_cs252v-3_02.jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `payment`
+--
+
+CREATE TABLE IF NOT EXISTS `payment` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `rentalid` varchar(255) NOT NULL,
+  `paymentdate` datetime NOT NULL,
+  `amount` decimal(10,0) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 -- --------------------------------------------------------
 
@@ -91,17 +88,12 @@ CREATE TABLE IF NOT EXISTS `rental` (
   `custid` varchar(255) NOT NULL,
   `rentaldate` datetime NOT NULL,
   `expiredate` datetime NOT NULL,
+  `outstanding` decimal(10,0) NOT NULL,
   `total` decimal(10,0) NOT NULL,
   `status` varchar(255) NOT NULL,
+  `isreturn` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `rental`
---
-
-INSERT INTO `rental` (`id`, `norental`, `custid`, `rentaldate`, `expiredate`, `total`, `status`) VALUES
-('4fd0967956f10', '4fd0967956ee9', '4fd0967945431', '2012-06-07 18:54:33', '2012-06-08 18:54:33', 400000, 'Booking');
 
 -- --------------------------------------------------------
 
@@ -115,17 +107,11 @@ CREATE TABLE IF NOT EXISTS `rentaldetail` (
   `rentalid` varchar(255) NOT NULL,
   `qty` int(11) NOT NULL,
   `term` int(11) NOT NULL,
+  `denda` decimal(10,0) NOT NULL,
   `total` decimal(10,0) NOT NULL,
   `returndate` date NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=56 ;
-
---
--- Dumping data for table `rentaldetail`
---
-
-INSERT INTO `rentaldetail` (`id`, `paketid`, `rentalid`, `qty`, `term`, `total`, `returndate`) VALUES
-(55, 9, '4fd0967956f10', 1, 1, 400000, '0000-00-00');
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=82 ;
 
 -- --------------------------------------------------------
 
