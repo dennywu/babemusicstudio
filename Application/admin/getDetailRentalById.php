@@ -3,7 +3,7 @@
     require_once('../global.inc.php');
     
     $id = $_GET['id'];
-    $qry = "SELECT r.id,r.norental,r.status,r.outstanding, r.rentaldate, r.expiredate,r.total, c.title, c.name, 
+    $qry = "SELECT r.isreturn, r.id,r.norental,r.status,r.outstanding, r.rentaldate, r.expiredate,r.total, c.title, c.name, 
             c.address from rental r inner join customer c on (r.custid = c.id) 
             where r.id = '$id'";
     $result = mysql_query($qry);

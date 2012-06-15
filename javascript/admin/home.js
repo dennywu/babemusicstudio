@@ -109,20 +109,22 @@ function showDetailCallBack(data){
                                     "<form action='/rent-band/Application/admin/AmbilBarang.php' method='POST'><div><input type='hidden' name='rentalid' value='"+ data.id +"'/><input type='submit' value='Pinjam'/></div></form>"+
                                     "</td></tr>");
         }
-        if(data.status == "Pinjam"){
+        if(data.isreturn != "true" && data.status != "Booking"){
             $(".tblRentalCart").append("<tr class='print'><td colspan='8'>"+
                                     "<form action='/rent-band/Application/admin/return.php' method='POST'><div><input type='hidden' name='rentalid' value='"+ data.id +"'/><input type='submit' value='Kembali'/></div></form>"+
                                     "</td></tr>");
         }
-        if(data.status != "Lunas"){
+        if(data.status != "Lunas" && data.status != "Booking"){
             $(".tblRentalCart").append("<tr class='print'><td colspan='8'>"+
                                     "<div><form action='/rent-band/Application/admin/pembayaran.php' method='POST'>Pembayaran: <input type='hidden' name='rentalid' value='"+ data.id +"'/>"+
                                     "<input type='text' name='amount'/> <button type='submit'>Bayar</button></form></div>"+
                                     "</td></tr>");
         }
+        if(data.status != "Booking"){
         $(".tblRentalCart").append("<tr><td colspan='8'>"+
                                     "<table cellpadding='0' cellspacing='0' id='riwayatPembayaran' width='350px'><tr><td colspan='2'><strong>Riwayat Pembayaran : </strong></td></tr></table>"+
                                     "</td></tr>");
+        }
         showRiwayatPembayara(data.id);
     }, 1000);
 }

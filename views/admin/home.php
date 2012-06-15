@@ -1,7 +1,7 @@
 <html>
     <head>
-        <link href="/rent-band/css/site.css" rel="stylesheet" type="css/text"/>
-        <link href="/rent-band/css/admin/home.css" rel="stylesheet" type="css/text"/>
+        <link href="/rent-band/css/site.css" rel="stylesheet"/>
+        <link href="/rent-band/css/admin/home.css" rel="stylesheet"/>
         <script src="/rent-band/javascript/plugin/jquery.min.js"></script>
         <script src="/rent-band/javascript/plugin/DateFormat.js"></script>
         <script src="/rent-band/javascript/plugin/PrintDocument.js"></script>

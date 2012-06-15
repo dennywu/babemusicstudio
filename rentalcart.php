@@ -2,9 +2,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link href="/rent-band/css/site.css" rel="stylesheet" type="css/text"/>
-        <link href="/rent-band/css/rentalCart.css" rel="stylesheet" type="css/text"/>
-        <link href="/rent-band/css/rentalCartPrint.css" rel="stylesheet" media="print" type="css/text"/>
+        <link href="/rent-band/css/site.css" rel="stylesheet"/>
+        <link href="/rent-band/css/rentalCart.css" rel="stylesheet"/>
+        <link href="/rent-band/css/rentalCartPrint.css" rel="stylesheet" media="print"/>
         
         <script src="/rent-band/javascript/plugin/jquery.min.js"></script>
         <script src="/rent-band/javascript/plugin/PrintDocument.js"></script>

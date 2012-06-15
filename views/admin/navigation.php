@@ -1,4 +1,4 @@
-<link href="/rent-band/css/navigation.css" rel="stylesheet" type="css/text"/>
+<link href="/rent-band/css/navigation.css" rel="stylesheet"/>
 <nav id="globalheader" class='apple globalheader-js noinset svg globalheader-loaded globalheader-loaded'>
 			<ul id="globalnav" role="navigation">
 				<li id="gn-store">
