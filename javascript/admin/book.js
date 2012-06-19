@@ -15,6 +15,7 @@ function showitemCallBack(data){
         $("#tblbook tbody").append("<tr bgcolor='"+ bgcolor +"'>"+
                             "<td><img src='/rent-band/images/books/"+data[i].image+"' width='30px' target='_blank'/></td>"+
                             "<td>"+data[i].name+"</td>"+
+                            "<td width= '90px' class='text-right'>"+data[i].dendaperhari.toCurrency(2)+"</td>"+
                             "<td width= '90px' class='text-right'>"+data[i].amount.toCurrency(2)+"</td>"+
                             "<td><input type='button' value='Update' id='"+ data[i].id +"'class='update'/></td>"+
                             "</tr>");
@@ -29,17 +30,7 @@ function updatePaket(){
 }
 function createBook(){
 	var editDialog = ModalDialog.Show();
-        $('.Detail').load('/rent-band/views/admin/newBook.html');
-             $.ajax({
-                type:'GET',
-                url:'/rent-band/Application/admin/getAllCategory.php',
-                dataType:'json',
-                success:function(result){
-                    for(var i = 0; i< result.length; i++){
-                        $("#kategori").append("<option value='"+ result[i].id +"'>"+ result[i].name +"</option>");
-                    }
-                }
-            });
+        $('.Detail').load('/rent-band/views/admin/newPaket.html');
 }
 function closeDialogEdit(){
       $('.ModalDialog').remove();
@@ -53,6 +44,7 @@ function setDataToUpdateDialog(id){
             $("#id").val(data.id);
             $("#name").val(data.name);
             $("#detail").val(data.detail);
+            $("#dendaperhari").val(data.dendaperhari);
             $("#amount").val(data.amount);
         }
     });

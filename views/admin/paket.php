@@ -26,7 +26,8 @@
                     <tr>
                         <td width="50px;"></td>
                         <td>Nama Paket</td>
-                        <td class='text-right'>Amount</td>
+                        <td class='text-right'>Denda Per Hari</td>
+                        <td class='text-right'>Harga Sewa Per Hari</td>
                         <td width='45px'></td>
                     </tr>
                 </thead>

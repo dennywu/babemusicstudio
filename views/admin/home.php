@@ -25,6 +25,7 @@
                         <td>Nomor Rental</td>
                         <td>Nama Pelanggan</td>
                         <td>Tangal Rental</td>
+                        <td>Sisa Tagihan</td>
                         <td>Total</td>
                         <td>Status</td>
                     </tr>
