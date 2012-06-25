@@ -17,8 +17,14 @@
     $queryRental = mysql_query("SELECT total,outstanding from rental where id = '$id'");
     if($r = mysql_fetch_array($queryRental)){
         $total = $r['total'] + $totaldenda;
-        $outstanding = $total - $r['outstanding'];
-        mysql_query("UPDATE rental set total = '$total', outstanding = '$outstanding',isreturn ='true' where id = '$id'");
+        $telahdibayar = $r['total'] - $r['outstanding'];
+        $outstanding = $total - $telahdibayar;
+        if($outstanding == 0){
+            mysql_query("UPDATE rental set total = '$total', outstanding = '$outstanding',isreturn ='true' where id = '$id'");
+        }
+        else{
+            mysql_query("UPDATE rental set total = '$total', outstanding = '$outstanding',isreturn ='true',status='Bayar' where id = '$id'");
+        }
     }
     
     mysql_query("Update rental set status = 'Kembali' where id = '$id'");
