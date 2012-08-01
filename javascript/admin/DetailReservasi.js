@@ -71,7 +71,7 @@ function CreateTableDetailReservation() {
 function InsertDetailReservationToTable(data) {
     if (data == null || data.length == 0) {
         DestroyTableDetailReservation();
-        return alert("Data Penjualan Tidak Di Temukan");
+        return alert("Data Penyewaan Tidak Di Temukan");
     }
     $("#TableDetailPenjualan tbody").empty();
     var color;

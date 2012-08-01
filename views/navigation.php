@@ -23,7 +23,7 @@
 				</li>
 				<li style="width:100%;text-align:right;padding-right:5px;padding-left:50px;">
 					<div>
-                                            <span style="text-align:right;padding-right:20px;color:#ccc;text-shadow: 0 0 0;" id="spanCart">Keranjang Penyewaan: <?php include_once 'cart.php'; ?></span>
+                                            <span style="text-align:right;padding-right:20px;color:#ccc;text-shadow: 0 0 0;" id="spanCart">Keranjang Pemesanan: <?php include_once 'cart.php'; ?></span>
                                             <!--<input id="searchItem" type="text" placeholder="Cari" style="padding-left:5px;margin-left:20px;-moz-border-radius: 15px;border-radius: 15px;"/>-->
 					<div>
 				</li>

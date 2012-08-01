@@ -74,7 +74,7 @@ function CreateTableDetailReservationPerHari() {
 function InsertDetailReservationPerHariToTable(data) {
     if (data == null || data.length == 0) {
         DestroyTableDetailReservationPerHari();
-        return alert("Data Penjualan Tidak Di Temukan");
+        return alert("Data Penyewaan Tidak Di Temukan");
     }
     $("#TableDetailPenjualan tbody").empty();
     var color;
